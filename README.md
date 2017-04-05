@@ -1,3 +1,7 @@
+[![Build Status](https://img.shields.io/travis/concordion/concordion-template-java.svg)](https://travis-ci.org/concordion/concordion-template-java)
+![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+
+
 # Concordion Java Template
 
 This project contains an empty project that can be used as a starting point for a [Concordion](http://concordion.org)  test project.

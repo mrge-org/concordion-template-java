@@ -1,3 +1,7 @@
+[![Build Status](https://img.shields.io/travis/concordion/concordion-template-java.svg)](https://travis-ci.org/concordion/concordion-template-java)
+[![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+
+
 # Concordion Java Template
 
 This project contains an empty project that can be used as a starting point for a [Concordion](http://concordion.org)  test project.
@@ -34,3 +38,5 @@ If using Gradle, you can delete the Maven `pom.xml` file.
 If using Maven, you can delete the Gradle files `gradlew`, `gradlew.bat`, `build.gradle` and folders`gradlew`, `.gradle`.
 
 The `src/test/java` and `src/test/resources` folders contain a `.deleteme` file that is a placeholder so that the directory containing it can be committed to version control. Once you have added a test fixture to `src/test/java` and a specification to `src/test/resources` you can safely delete these files.
+
+The file `.travis.yml` is included for the Travis CI build and can safely be deleted.

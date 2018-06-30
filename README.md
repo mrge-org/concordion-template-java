@@ -4,7 +4,7 @@
 
 # Concordion Java Template
 
-This project contains an empty project that can be used as a starting point for a [Concordion](http://concordion.org)  test project.
+This project contains an empty project that can be used as a starting point for a [Concordion](https://concordion.org)  test project.
 
 It includes Gradle and Maven files to manage its dependencies, build and run the Concordion tests. If you are unsure which to use, choose Gradle since the project contains a Gradle wrapper so you do not have to download and install Gradle yourself.
 

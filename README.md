@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/concordion/concordion-template-java.svg)](https://travis-ci.org/concordion/concordion-template-java)
+[![Build Status](https://img.shields.io/travis/com/concordion/concordion-template-java.svg)](https://travis-ci.com/concordion/concordion-template-java)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 

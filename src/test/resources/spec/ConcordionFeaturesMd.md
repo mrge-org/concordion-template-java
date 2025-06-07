@@ -39,8 +39,10 @@ To specify a custom runner, use:
 
 where `runnerName` is the fully qualified class name of the runner.
 
-We can run other specifications [from here](SplittingNames.md "c:run=spec.CustomRunner").
+Here we demo run with spec.CustomRunner of [another specification](SplittingNames.md "c:run=spec.CustomRunner"). Such custom runner can run other types of tests.
 
+To run another Concordion specification: 
+- [Concordion Syntax Reference ::  spec>ConcordionSyntaxReference ](ConcordionSyntaxReference.html "c:run")
 
 
 ## Example Heading

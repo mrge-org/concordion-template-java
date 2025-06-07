@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:concordion="http://www.concordion.org/2007/concordion" xmlns:ext="urn:concordion-extensions:2010">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Concordion Syntax and Commands Reference (HTML)</title>
+</head>
+<body>
+    <h1>Concordion Syntax and Commands Reference (HTML)</h1>
+    <p>This specification demonstrates and tests Concordion commands using HTML syntax.</p>
+
+    <h2>Variable Declaration and Assignment</h2>
+    <p>Declare variable: <span concordion:set="#var">abc</span></p>
+<!--    <p>Assign variable: <span concordion:set="#var2 = #var">abc</span></p>-->
+
+    <h2>Variable Reference</h2>
+    <p>Assert variable: <span concordion:assert-equals="#var">abc</span></p>
+
+    <h2>Property Reference</h2>
+    <p>Declare complex object with setting specific property: <span concordion:set="#obj=complexObject(#TEXT)">propertyValue</span></p>
+    <p>Assert property: <span concordion:assert-equals="#obj.prop">propertyValue</span></p>
+
+    <h2>Method Execution</h2>
+    <p>Execute method: <span concordion:execute="#result = method()">run</span></p>
+    <p>Execute with param: <span concordion:execute="#result = method('x')">run with param</span></p>
+
+    <h2>Verify Result (assert-equals)</h2>
+    <p><span concordion:assert-equals="getGreeting()">Hello!</span></p>
+
+    <h2>Run Command</h2>
+    <a concordion:run="concordion" href="secondLevel.html">Run second level spec</a>
+
+    <h2>Execute on Table</h2>
+    <table concordion:execute="#result = split(#fullName)">
+        <tr>
+            <th concordion:set="#fullName">Full Name</th>
+            <th concordion:assert-equals="#result.firstName">First Name</th>
+            <th concordion:assert-equals="#result.lastName">Last Name</th>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>John</td>
+            <td>Smith</td>
+        </tr>
+    </table>
+
+    <h2>Execute on List</h2>
+    <ol concordion:execute="#item = getItems()">
+        <li concordion:assert-equals="#item">item1</li>
+        <li concordion:assert-equals="#item">item2</li>
+    </ol>
+
+    <h2>Example Command</h2>
+    <div concordion:example="example1">Example content</div>
+
+    <h2>Status Modifiers</h2>
+    <span concordion:status="ExpectedToFail">Expected to fail</span>
+
+    <h2>Verify Rows</h2>
+    <table concordion:verify-rows="#user : getUsers()">
+        <tr><th concordion:assert-equals="#user">User</th></tr>
+        <tr><td>alice</td></tr>
+        <tr><td>bob</td></tr>
+    </table>
+
+    <h2>Assert-True and Assert-False</h2>
+    <span concordion:assert-true="isReady()">Ready</span>
+    <br/>
+    <span concordion:assert-false="isError()">Not Error</span>
+
+    <h2>Echo Command</h2>
+    <span concordion:echo="#fullName"></span>
+
+    <h2>Extensions</h2>
+    <span ext:custom="value">Custom Extension</span>
+
+</body>
+</html>

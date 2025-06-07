@@ -26,6 +26,10 @@ import java.io.File;
  * <p>
  * For simple cases, use the standard Concordion approach:
  * <code>[Link Text](SpecificationFile.md "c:run")</code>
+ *
+ * If you want to run tests that are not part of Concordion, you can write
+ * your own runner by implementing the org.concordion.api.Runner interface.
+ *
  */
 public class CustomRunner implements Runner {
 

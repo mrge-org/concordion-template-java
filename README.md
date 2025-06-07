@@ -2,9 +2,17 @@
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 
-# Concordion Java Template
+# Concordion Java Template (Updated)
 
 This project contains an empty project that can be used as a starting point for a [Concordion](https://concordion.org)  test project.
+
+## Build Systems
+
+This project maintains separate branches for different build systems:
+- `master` branch: Uses Maven for build automation
+- `dev_gradle_build` branch: Uses Gradle for build automation
+
+Choose the branch that matches your preferred build system. The `master` branch contains Maven configuration, while the `dev_gradle_build` branch contains Gradle configuration.
 
 It includes Gradle and Maven files to manage its dependencies, build and run the Concordion tests. If you are unsure which to use, choose Gradle since the project contains a Gradle wrapper so you do not have to download and install Gradle yourself.
 
